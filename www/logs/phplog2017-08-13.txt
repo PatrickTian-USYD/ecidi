@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+Source:FunApi
+Datetime:2017-08-13 12:59:03
+Content:method:pub_getAuthid
+---------------------------------------------------------------
+Source:FunApi
+Datetime:2017-08-13 12:59:03
+Content:Check User Infor:select User_Pkid,User_FullName from ITMS_User where User_UserName='zhu_xl' and User_Password='xiaochong'
+---------------------------------------------------------------
+Source:coopword->planinfor
+Datetime:2017-08-13 13:12:33
+Content:Select plan Infor SQL:select Plan_Pkid,Plan_TaskPkid,Plan_Name,Plan_Executor,Plan_Participant,Plan_PCompleteDate,Plan_ACompleteDate,Plan_Status,Plan_Progress,Plan_LastChangeDate,Task_Name,User_FullName from (select Plan_Pkid,Plan_TaskPkid,Plan_Name,Plan_Executor,Plan_Participant,Plan_PCompleteDate,Plan_ACompleteDate,Plan_Status,Plan_Progress,Plan_LastChangeDate from ITMS_Plan where 1=1 and (Plan_PCompleteDate>'2017-08-01 00:00:00' or Plan_Status not in (3,4,8)) order by Plan_LastChangeDate desc) as PlanInfor,ITMS_Task,ITMS_User where PlanInfor.Plan_TaskPkid = ITMS_Task.Task_Pkid and PlanInfor.Plan_Executor = ITMS_User.User_UserName
+---------------------------------------------------------------
+Source:resources->ipaddressinfor
+Datetime:2017-08-13 13:12:33
+Content:Select Ipaddress Infor,RecordCount:51
+---------------------------------------------------------------
+Source:coopword->planinfor
+Datetime:2017-08-13 13:16:15
+Content:Select plan Infor SQL:select Plan_Pkid,Plan_TaskPkid,Plan_Name,Plan_Executor,Plan_Participant,Plan_PCompleteDate,Plan_ACompleteDate,Plan_Status,Plan_Progress,Plan_LastChangeDate,Task_Name,User_FullName from (select Plan_Pkid,Plan_TaskPkid,Plan_Name,Plan_Executor,Plan_Participant,Plan_PCompleteDate,Plan_ACompleteDate,Plan_Status,Plan_Progress,Plan_LastChangeDate from ITMS_Plan where 1=1 and (Plan_PCompleteDate>'2017-08-01 00:00:00' or Plan_Status not in (3,4,8)) order by Plan_LastChangeDate desc) as PlanInfor,ITMS_Task,ITMS_User where PlanInfor.Plan_TaskPkid = ITMS_Task.Task_Pkid and PlanInfor.Plan_Executor = ITMS_User.User_UserName
+---------------------------------------------------------------
+Source:resources->ipaddressinfor
+Datetime:2017-08-13 13:16:15
+Content:Select Ipaddress Infor,RecordCount:51
